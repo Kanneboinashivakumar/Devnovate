@@ -1,0 +1,416 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* ===== Purple Banner ===== */
+.purple-banner {
+  background: linear-gradient(135deg, #8a2be2, #6f1dbf);
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.purple-banner h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.purple-banner p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* ===== CTA Button ===== */
+.cta-btn {
+  background: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn span {
+  background: linear-gradient(90deg, #8a2be2, #c084f5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.cta-btn svg {
+  color: #8a2be2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+  background: #f0f0f0;
+}
+
+.cta-btn:hover span,
+.cta-btn:active span {
+  -webkit-text-fill-color: black;
+  color: black;
+}
+
+.cta-btn:hover svg,
+.cta-btn:active svg {
+  transform: translateX(5px);
+  color: black;
+}
+
+/* ===== Footer Base ===== */
+.footer {
+  background: #fff;
+  max-width: 1200px;
+  margin: -40px auto 40px;
+  border-radius: 16px;
+  padding: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.footer-right {
+  display: flex;
+  gap: 50px;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #111;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #8a2be2;
+}
+
+/* ===== Newsletter + Social Row ===== */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.newsletter-title {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #8a2be2, #c084f5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.newsletter-input {
+  width: 300px;
+  height: 55px;
+  padding: 0 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #8a2be2;
+  color: white;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #f0e6ff;
+}
+
+/* ===== Bigger Subscribe Button ===== */
+.subscribe-btn {
+  padding: 0 35px;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #8a2be2, #c084f5);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f3f0f8;
+  color: #8a2be2;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+  background: #8a2be2;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-links a {
+  margin-left: 15px;
+  color: #555;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #8a2be2;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-input,
+  .subscribe-btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    min-width: 100%;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+
+  .footer-column h4 {
+    font-size: 14px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+  .newsletter-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== Modal Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Close Button ===== */
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  color: #8a2be2;
+}
+
+/* ===== Modal Title ===== */
+.modal-title {
+  text-align: center;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #8a2be2, #c084f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* ===== Form ===== */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #8a2be2;
+}
+
+/* ===== Submit Button ===== */
+.signup-submit-btn {
+  padding: 15px;
+  background: linear-gradient(90deg, #8a2be2, #c084f5);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .modal-content {
+    padding: 30px 20px;
+  }
+}
